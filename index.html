@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js"></script>
+    <title>Scheduler</title>
+</head>
+<div>
+    <div class="Scheduler__container">
+        <!-- ========================================Teacher_container======================================================================== -->
+        <div class="Teachers_container">
+            <div class="Teacher_container_title">
+                Our Teacher's List
+            </div>
+            <div class="Teacher_container_data teacher_list">
+                    rajkumar rao
+                </div>
+                <div class="Teacher_container_data_2 teacher_list">
+                  nawazuddin siddiqui
+                </div>
+                <div class="Teacher_container_data_3 teacher_list">
+                  manoj bajpai
+                </div>
+                <div class="Teacher_container_data_4 teacher_list">
+                    pankaj tripathi
+                </div>
+                <div class="Teacher_container_data_5 teacher_list">
+                    kay kay menon
+                </div>
+            </div>
+    <!-- ===============================================================select your teacher to see schedule======================================================== -->
+    <div class="Schedule_view" id="Schedule_view">
+        <span id="Schedule_view_title">Enter Your Teacher name to view schedule</span>
+        <form>
+            <div class="Schedule_view_form">
+                <label for="Selected_Teacher_name">Teacher Name : </label>
+                <input type="text" id="Selected_teacher" name="Selected_Teacher_name" class="Selected_form" placeholder="Enter Your Teacher Name">
+            </div>
+            
+            <div id="select_tec_button">
+                <button class="Selecte_tec" id="Selecte_tec">View</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- =========================================================class_data_container============================================================================= -->
+        <div id="class_data_container">
+        <div id="class_data_container_teacher_name">
+                  manoj bajpayi
+        </div>
+        <div class="class_data_container_main">
+        </div>
+    </div>
+    
+
+        <div class="Scheduler__container_header">
+            <div class="Scheduler__container_header_left">
+                <img src="./images/logo.svg" alt="logo" id="header_logo">
+                <span class="Scheduler_title">Teaching Schedule</span>
+            </div>
+            <div class="Scheduler__container_header_middle">
+                <div class="present_day" id="present_day">June 2020</div>
+            </div>
+            <div class="Scheduler__container_header_right">
+                <div class="prev_button "><button class="button" id="prev">Prev</button></div>
+                <div class="next_button "><button class="button" id="next">Next</button></div>
+            </div>
+            
+        </div>
+            
+            <div class="main_container_middle">
+                <div class="Scheduler__container_weeks">
+                    <div class="week_name" id="0">Sun</div>
+                    <div class="week_name" id="1">Mon</div>
+                    <div class="week_name" id="2">Tue</div>
+                    <div class="week_name" id="3">Wed</div>
+                    <div class="week_name" id="4">Thu</div>
+                    <div class="week_name" id="5">Fri</div>
+                    <div class="week_name" id="6">Sat</div>
+                </div>
+                <div class="Scheduler__container_days" id="Days_List">
+        
+                </div>
+            </div>
+           
+
+        <div class="Scheduler__footer">
+               <div class="manual_edit">
+                   <button class="manual_delete" id="manual_delete">Delete Class</button>
+                 <button class="manual_add" id="manual_add">Add Class</button>
+               </div>
+        </div>
+        <div class="event_popup" id="event_popup">
+            <form>
+                <div class="teacher">
+                    <label for="Teacher_name">Teacher Name : </label>
+                    <input type="text" id="Teacher_name" name="Teacher_name" class="input_form" placeholder="Enter name">
+                </div>
+                <div class="time_limit">
+                    <label for="Time_from">From Time : </label>
+                    <input type="number" id="Time_from" name="Time_from" class="input_form" placeholder="From time in no"><br/>
+                    <label for="Time_to">To Time : </label>
+                    <input type="number" id="Time_to" name="Time_to" class="input_form" placeholder="To time in no"><br/>
+                </div>
+                <span class="for_day" id="for_day"></span>
+                <div class="button_collection">
+                    <button class="button" id="save">Save</button>
+                    <button class="button" id="delete">Delete</button>
+                    <button class="button" id="cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div class="manual_event_popup" id="manual_event_popup">
+            <form>
+                <div class="manual_teacher">
+                    <label for="manual_Teacher_name">Teacher Name : </label>
+                    <input type="text" id="manual_Teacher_name" name="manual_Teacher_name" class="manual_input_form" placeholder="Enter name">
+                </div>
+                <div class="manual_time_limit">
+                    <label for="Time_from">From Time : </label>
+                    <input type="number" id="manual_Time_from" name="Time_from" class="manual_input_form" placeholder="From time in no"><br/>
+                    <label for="Time_to">To Time : </label>
+                    <input type="number" id="manual_Time_to" name="Time_to" class="manual_input_form" placeholder="To time in no"><br/>
+                    <input type="text" id="manual_date" name="manual_date" class="manual_input_form" placeholder="yyyy-mm-dd"><br/>
+                </div>
+                <div class="manual_button">
+                    <button class="button" id="manual_submit_add">Submit</button>
+                    <button class="button" id="manual_cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="manual_event_popup" id="manual_event_delete_popup">
+            <form>
+                <div class="manual_teacher">
+                    <label for="manual_Teacher_name">Teacher Name : </label>
+                    <input type="text" id="manual_Teacher_delete_name" name="manual_Teacher_name" class="manual_input_form" placeholder="Enter name">
+                </div>
+                <div class="manual_time_limit">
+                    <label for="Time_from">From Time : </label>
+                    <input type="number" id="manual_Time_delete_from" name="Time_from" class="manual_input_form" placeholder="From time in no"><br/>
+                    <label for="Time_to">To Time : </label>
+                    <input type="number" id="manual_Time_delete_to" name="Time_to" class="manual_input_form" placeholder="To time in no"><br/>
+                    <input type="text" id="manual_date_delete" name="manual_date" class="manual_input_form" placeholder="yyyy-mm-dd"><br/>
+                </div>
+                <div class="manual_button">
+                    <button class="button" id="manual_submit_delete">Delete</button>
+                    <button class="button" id="manual_cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>
