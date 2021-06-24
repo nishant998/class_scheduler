@@ -5,7 +5,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
-.Teachers_container{
+.Teachers_container {
   position: absolute;
   top: 9rem;
   left: 10px;
@@ -19,7 +19,7 @@
   border-radius: 15px;
   background-color: rgba(255, 166, 0, 0.226);
 }
-.Schedule_view{
+.Schedule_view {
   position: absolute;
   top: 32rem;
   left: 10px;
@@ -33,18 +33,18 @@
   border-radius: 15px;
   background-color: white;
 }
-#Schedule_view_title{
+#Schedule_view_title {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
   color: orange;
 }
-#select_tec_button{
+#select_tec_button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#Selecte_tec{
+#Selecte_tec {
   width: 6rem;
   margin-right: 1rem;
   height: 1.5rem;
@@ -56,30 +56,28 @@
   border: 1px solid rgb(0, 0, 0);
 }
 
-#Selected_teacher{
+#Selected_teacher {
   outline: none;
   border: none;
   border-bottom: 1px solid orange;
   font-size: 1.1rem;
   margin: 1rem 1rem;
-  background-color: rgb(255, 255, 255) ;
-  
+  background-color: rgb(255, 255, 255);
 }
-.Schedule_view_form{
+.Schedule_view_form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  
 }
-.Schedule_view_form>label{
+.Schedule_view_form > label {
   font-size: 1.2rem;
   font-weight: bold;
   padding: 0.2rem 0rem;
   color: rgb(82, 79, 79);
 }
 
-#class_data_container{
+#class_data_container {
   position: absolute;
   top: 15rem;
   right: 10px;
@@ -94,10 +92,10 @@
   border-radius: 15px;
   background-color: rgba(255, 166, 0, 0.226);
 }
-.every_class{
+.every_class {
   margin-top: 1rem;
 }
-#class_data_container_teacher_name{
+#class_data_container_teacher_name {
   /* border-bottom: 2px solid black; */
   display: flex;
   font-weight: bold;
@@ -108,7 +106,7 @@
   margin: auto;
 }
 
-.class_data_container_main{
+.class_data_container_main {
   /* border-bottom: 2px solid rgb(115, 48, 192); */
   display: flex;
   flex-direction: column;
@@ -117,11 +115,11 @@
   margin: auto;
   padding: 0.2rem 0rem;
 }
-.class_date{
+.class_date {
   display: flex;
   justify-content: center;
 }
-.class_time{
+.class_time {
   display: flex;
   flex-direction: row;
   width: 8rem;
@@ -130,13 +128,13 @@
   border-bottom: 2px solid rgb(115, 48, 192);
 }
 
-.teacher_list{
- margin: 1rem 0rem;
+.teacher_list {
+  margin: 1rem 0rem;
   display: flex;
   justify-content: space-between;
 }
 
-.Teacher_container_title{
+.Teacher_container_title {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
@@ -156,16 +154,16 @@
   align-items: center;
   font-size: 1.5rem;
 }
-.Scheduler_title{
-    color: rgb(255, 115, 0);
+.Scheduler_title {
+  color: rgb(255, 115, 0);
 }
 .Scheduler__container_header_middle {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
 }
-.present_day{
-    color: rgb(255, 153, 0); 
+.present_day {
+  color: rgb(255, 153, 0);
 }
 .Scheduler__container_header_right {
   display: flex;
@@ -192,7 +190,7 @@
   width: 50px;
   margin-right: 1rem;
   margin-left: -1.5rem;
-  filter:sepia(1);
+  filter: sepia(1);
 }
 .Scheduler__container {
   display: flex;
@@ -230,58 +228,57 @@
   padding: 0.2rem 0rem 0rem 0.2rem;
   font-family: "Baloo Tammudu 2", cursive;
 }
-.blank{
-    visibility: hidden;
+.blank {
+  visibility: hidden;
 }
-.event_popup{
-    display: none;
-    border: 1px solid black;
-    padding: 1rem 0rem;
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0.205);
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
+.event_popup {
+  display: none;
+  border: 1px solid black;
+  padding: 1rem 0rem;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.205);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
 }
-.event_popup>form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1.2rem;
-    font-weight: bold;
-    background-color: rgb(255, 255, 255);
-    padding: 1rem 1rem;
-    border-radius: 10px;
-    color: orange;
-    border: 2px solid black;
-    width: 30rem;
-    margin: auto;
-   
+.event_popup > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  color: orange;
+  border: 2px solid black;
+  width: 30rem;
+  margin: auto;
 }
-.input_form{
-    outline: none;
-    border: none;
-    border-bottom: 1px solid orange;
-    font-size: 1.1rem;
-    margin-left: 1rem;
-    background-color: rgb(255, 255, 255) ;
-    margin-bottom: 1rem;
+.input_form {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid orange;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 1rem;
 }
-.for_day{
-    margin-bottom: 1rem;
+.for_day {
+  margin-bottom: 1rem;
 }
-.saved{
+.saved {
   background-color: rgb(195, 232, 247);
 }
-.manual_edit{
+.manual_edit {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 850px;
   margin-top: 1rem;
 }
-.manual_edit>button{
+.manual_edit > button {
   width: 6rem;
   margin-right: 1rem;
   height: 1.5rem;
@@ -293,11 +290,11 @@
   border: 1px solid rgb(0, 0, 0);
 }
 
-.manual_edit>button:active {
+.manual_edit > button:active {
   background-color: rgb(255, 255, 255);
   color: orange;
 }
-#manual_event_popup{
+#manual_event_popup {
   display: none;
   border: 1px solid black;
   padding: 1rem 0rem;
@@ -307,7 +304,7 @@
   height: 100vh;
   width: 100vw;
 }
-#manual_event_delete_popup{
+#manual_event_delete_popup {
   display: none;
   border: 1px solid black;
   padding: 1rem 0rem;
@@ -317,7 +314,7 @@
   height: 100vh;
   width: 100vw;
 }
-#manual_event_popup>form{
+#manual_event_popup > form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -332,7 +329,7 @@
   width: 30rem;
   margin: auto;
 }
-#manual_event_delete_popup>form{
+#manual_event_delete_popup > form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -347,20 +344,20 @@
   width: 30rem;
   margin: auto;
 }
-.manual_input_form{
+.manual_input_form {
   outline: none;
   border: none;
   border-bottom: 1px solid orange;
   font-size: 1.1rem;
   margin-left: 1rem;
-  background-color: rgb(255, 255, 255) ;
+  background-color: rgb(255, 255, 255);
   margin-bottom: 1rem;
 }
-#manual_date{
+#manual_date {
   margin-left: 5rem;
   margin-bottom: 1rem;
 }
-.right_logo{
+.right_logo {
   position: absolute;
   top: -20px;
   right: 10px;

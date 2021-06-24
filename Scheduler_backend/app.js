@@ -3,11 +3,15 @@ const app = express()
 const mysqlConnection = require('./db') ;
 const Teacher_data = require('./routes/teacher_data')
 var cors = require('cors')
-const port = 3002
+const port = process.env.PORT || 3002 ;
 
 app.use(cors())
 app.use(express.json());
 app.use("/teacher_data" , Teacher_data) ;
+
+app.get('/' , (req , res)=>{
+  res.send("Hello world") ;
+})
 
 app.post('/fetch', (req, res) => {
   const request_for_save_data = req.body ;

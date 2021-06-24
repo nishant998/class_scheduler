@@ -74,7 +74,7 @@ async function Page_loaded(){
         DaysList.appendChild(day_class) ;
     }
 
-    let database_data =  await fetch('http://localhost:3002/teacher_data') ;
+    let database_data =  await fetch('https://scheduler-backend-nishant.herokuapp.com/teacher_data') ;
 
         if (database_data.ok) { 
             const database_data_res = await database_data.json();
@@ -124,7 +124,7 @@ function ClosePopup(){
     let Time_from = document.getElementById('Time_from') ;
     let Time_to = document.getElementById('Time_to') ;
     let schedule_date = document.getElementById('for_day') ;
-    let database_data = await fetch('http://localhost:3002/teacher_data');
+    let database_data = await fetch('https://scheduler-backend-nishant.herokuapp.com/teacher_data');
     let check=false  ;
      Teacher_name.value = Teacher_name.value.toLowerCase() ;
     for(let k = 0 ; k<Teachers_list.length ; k++)
@@ -175,7 +175,7 @@ function ClosePopup(){
                     schedule_date : schedule_date.innerText
           };
           
-          let response = await fetch('http://localhost:3002/fetch', {
+          let response = await fetch('https://scheduler-backend-nishant.herokuapp.com/fetch', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json;charset=utf-8'
@@ -206,7 +206,7 @@ async function Delete_data_teacher(){
             schedule_date : schedule_date.innerText
     };
     
-    let response = await fetch('http://localhost:3002/delete', {
+    let response = await fetch('https://scheduler-backend-nishant.herokuapp.com/delete', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json;charset=utf-8'
@@ -237,7 +237,7 @@ async function manual_delete_class(){
             schedule_date : schedule_date.value
     };
     
-    let response = await fetch('http://localhost:3002/delete', {
+    let response = await fetch('https://scheduler-backend-nishant.herokuapp.com/delete', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json;charset=utf-8'
@@ -261,7 +261,7 @@ async function View_Teacher_Schedule(){
         alert("No Teacher with this name , Write a correct name") ;
     }
     else{
-        let database_data = await fetch('http://localhost:3002/teacher_data');
+        let database_data = await fetch('https://scheduler-backend-nishant.herokuapp.com/teacher_data');
         if (database_data.ok) { 
             const database_data_res = await database_data.json();
             if(  Class_data_container.style.display === "flex" ){
@@ -306,7 +306,7 @@ async function  manual_add_class(){
     let Time_from = document.getElementById('manual_Time_from') ;
     let Time_to = document.getElementById('manual_Time_to') ;
     let schedule_date = document.getElementById('manual_date') ;
-    let database_data = await fetch('http://localhost:3002/teacher_data');
+    let database_data = await fetch('http://scheduler-backend-nishant.herokuapp.com/teacher_data');
     let check=false  ;
     Teacher_name.value = Teacher_name.value.toLowerCase() ;
     for(let k = 0 ; k<Teachers_list.length ; k++)
@@ -358,7 +358,7 @@ async function  manual_add_class(){
                     schedule_date : schedule_date.value
           };
           
-          let response = await fetch('http://localhost:3002/fetch', {
+          let response = await fetch('https://scheduler-backend-nishant.herokuapp.com/fetch', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json;charset=utf-8'

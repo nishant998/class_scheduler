@@ -1,11 +1,11 @@
 var mysql = require('mysql');
 
 var mysqlConnection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "password" , 
+    host: "beydvupvnavbzkivvs5s-mysql.services.clever-cloud.com",
+    user: "ufqtpg57j03wkxpx",
+    password: "oR9aIbrM84azAofGcZDx" , 
     insecureAuth : true ,
-    database : "Scheduler_data" , 
+    database : "beydvupvnavbzkivvs5s" , 
     multipleStatements : true
   });
   
