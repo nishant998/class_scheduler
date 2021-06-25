@@ -2,9 +2,8 @@ const express = require('express')
 const app = express()
 const mysqlConnection = require('./db') ;
 const Teacher_data = require('./routes/teacher_data')
-var cors = require('cors')
 const port = process.env.PORT || 3002 ;
-
+var cors = require('cors');
 app.use(cors())
 app.use(express.json());
 app.use("/teacher_data" , Teacher_data) ;
@@ -14,6 +13,7 @@ app.get('/' , (req , res)=>{
 })
 
 app.post('/fetch', (req, res) => {
+  res. header("Access-Control-Allow-Origin", "*");
   const request_for_save_data = req.body ;
     res.status(200).send(req.body) ;
     console.log(request_for_save_data) ;
@@ -25,6 +25,7 @@ app.post('/fetch', (req, res) => {
     mysqlConnection.query("INSERT INTO Teacher_Schedule(Teacher_name , Time_from , Time_to , schedule_date) VALUES (? , ? , ? , ?)" , [teacher_name ,time_from, time_to , schedule_date]) ;
 })
 app.post('/delete', (req, res) => {
+  res. header("Access-Control-Allow-Origin", "*");
   const request_for_save_data = req.body ;
     res.status(200).send(req.body) ;
     console.log(request_for_save_data) ;

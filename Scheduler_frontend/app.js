@@ -306,7 +306,7 @@ async function  manual_add_class(){
     let Time_from = document.getElementById('manual_Time_from') ;
     let Time_to = document.getElementById('manual_Time_to') ;
     let schedule_date = document.getElementById('manual_date') ;
-    let database_data = await fetch('http://scheduler-backend-nishant.herokuapp.com/teacher_data');
+    let database_data = await fetch('https://scheduler-backend-nishant.herokuapp.com/teacher_data');
     let check=false  ;
     Teacher_name.value = Teacher_name.value.toLowerCase() ;
     for(let k = 0 ; k<Teachers_list.length ; k++)

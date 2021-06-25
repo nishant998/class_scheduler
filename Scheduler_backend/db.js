@@ -10,6 +10,7 @@ var mysqlConnection = mysql.createConnection({
   });
   
   mysqlConnection.connect(function(err) {
+    console.log("before error")
     if (err) throw err;
     console.log("Connected!");
   });
